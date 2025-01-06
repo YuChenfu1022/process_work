@@ -1,0 +1,78 @@
+using device: cuda
+GNN model: LightGCN
+Dataset: amazon
+/home/ycf/archive/encoder/utils/data_handler.py:106: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  return torch.sparse.FloatTensor(idxs, vals, shape)
+/home/ycf/archive/encoder/utils/data_handler.py:97: RuntimeWarning: divide by zero encountered in power
+  d_inv_sqrt = np.reshape(np.power(degree, -0.5), [-1])
+Epoch 0, Loss: 5.9945, Patience: 0, Recall: 0.0498
+Epoch 1, Loss: 5.8277, Patience: 0, Recall: 0.0888
+Epoch 2, Loss: 5.6101, Patience: 0, Recall: 0.1415
+Epoch 3, Loss: 5.2904, Patience: 0, Recall: 0.1522
+Epoch 4, Loss: 4.8996, Patience: 0, Recall: 0.1668
+Epoch 5, Loss: 4.3947, Patience: 0, Recall: 0.1717
+Epoch 6, Loss: 3.9273, Patience: 0, Recall: 0.1727
+Epoch 7, Loss: 3.6210, Patience: 0, Recall: 0.1756
+Epoch 8, Loss: 3.2632, Patience: 0, Recall: 0.1795
+Epoch 9, Loss: 2.9443, Patience: 0, Recall: 0.1805
+Epoch 10, Loss: 2.6187, Patience: 0, Recall: 0.1854
+Epoch 11, Loss: 2.4155, Patience: 0, Recall: 0.1922
+Epoch 12, Loss: 2.3064, Patience: 0, Recall: 0.1961
+Epoch 13, Loss: 2.1131, Patience: 0, Recall: 0.2010
+Epoch 14, Loss: 1.8488, Patience: 1, Recall: 0.1990
+Epoch 15, Loss: 1.7153, Patience: 2, Recall: 0.1980
+Epoch 16, Loss: 1.4882, Patience: 0, Recall: 0.2010
+Epoch 17, Loss: 1.5779, Patience: 1, Recall: 0.1990
+Epoch 18, Loss: 1.3644, Patience: 2, Recall: 0.1990
+Epoch 19, Loss: 1.2565, Patience: 3, Recall: 0.1990
+Epoch 20, Loss: 1.1292, Patience: 4, Recall: 0.2000
+Epoch 21, Loss: 1.1289, Patience: 5, Recall: 0.1980
+Epoch 22, Loss: 1.0140, Patience: 6, Recall: 0.1971
+Epoch 23, Loss: 0.9410, Patience: 7, Recall: 0.1961
+Epoch 24, Loss: 0.8969, Patience: 8, Recall: 0.1961
+Epoch 25, Loss: 0.8528, Patience: 9, Recall: 0.1941
+Epoch 26, Loss: 0.7644, Patience: 10, Recall: 0.1922
+Training finished
+Best Recall: 0.2010, NDCG: 0.0938, Precision: 0.0176, MRR: 0.0823
+
+using device: cuda
+GNN model: LightGCN
+Dataset: amazon
+/home/ycf/archive/encoder/utils/data_handler.py:106: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at ../torch/csrc/utils/tensor_new.cpp:641.)
+  return torch.sparse.FloatTensor(idxs, vals, shape)
+/home/ycf/archive/encoder/utils/data_handler.py:97: RuntimeWarning: divide by zero encountered in power
+  d_inv_sqrt = np.reshape(np.power(degree, -0.5), [-1])
+Epoch 0, Loss: 5.9750, Patience: 0, Recall: 0.0390
+Epoch 1, Loss: 5.8042, Patience: 0, Recall: 0.0829
+Epoch 2, Loss: 5.5988, Patience: 0, Recall: 0.1395
+Epoch 3, Loss: 5.2541, Patience: 0, Recall: 0.1727
+Epoch 4, Loss: 4.8728, Patience: 0, Recall: 0.1834
+Epoch 5, Loss: 4.4696, Patience: 0, Recall: 0.1844
+Epoch 6, Loss: 4.0347, Patience: 0, Recall: 0.1854
+Epoch 7, Loss: 3.6621, Patience: 0, Recall: 0.1893
+Epoch 8, Loss: 3.1582, Patience: 1, Recall: 0.1863
+Epoch 9, Loss: 2.8457, Patience: 2, Recall: 0.1873
+Epoch 10, Loss: 2.5868, Patience: 0, Recall: 0.1902
+Epoch 11, Loss: 2.3122, Patience: 0, Recall: 0.1922
+Epoch 12, Loss: 2.5163, Patience: 0, Recall: 0.1951
+Epoch 13, Loss: 2.1093, Patience: 0, Recall: 0.1990
+Epoch 14, Loss: 1.8557, Patience: 1, Recall: 0.1980
+Epoch 15, Loss: 1.6503, Patience: 2, Recall: 0.1980
+Epoch 16, Loss: 1.5242, Patience: 0, Recall: 0.2000
+Epoch 17, Loss: 1.4329, Patience: 0, Recall: 0.2000
+Epoch 18, Loss: 1.3987, Patience: 0, Recall: 0.2020
+Epoch 19, Loss: 1.2063, Patience: 1, Recall: 0.2020
+Epoch 20, Loss: 1.1130, Patience: 2, Recall: 0.2020
+Epoch 21, Loss: 1.0305, Patience: 0, Recall: 0.2029
+Epoch 22, Loss: 0.9932, Patience: 1, Recall: 0.2010
+Epoch 23, Loss: 0.9419, Patience: 2, Recall: 0.2010
+Epoch 24, Loss: 0.9082, Patience: 3, Recall: 0.2000
+Epoch 25, Loss: 0.8998, Patience: 4, Recall: 0.1990
+Epoch 26, Loss: 0.8209, Patience: 5, Recall: 0.2010
+Epoch 27, Loss: 0.7578, Patience: 6, Recall: 0.2010
+Epoch 28, Loss: 0.7215, Patience: 7, Recall: 0.2010
+Epoch 29, Loss: 0.6553, Patience: 8, Recall: 0.1990
+Epoch 30, Loss: 0.6231, Patience: 9, Recall: 0.1980
+Epoch 31, Loss: 0.6471, Patience: 10, Recall: 0.1961
+Training finished
+Best Recall: 0.2029, NDCG: 0.0990, Precision: 0.0174, MRR: 0.0895
